@@ -5,21 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/85f5a47216.js" crossorigin="anonymous"></script>
     <title>Restaurant la note enchantée - ohmyfood!</title>
+
+    <!-- import FA -->
+    <script src="https://kit.fontawesome.com/85f5a47216.js" crossorigin="anonymous"></script>
+
     <!-- page CSS -->
+    <link rel="stylesheet" href="./css/main.css"/>
 
 </head>
 <body>
-    <head>
-        <a href=""><i><!-- icone flèche retour--></i></a>
-        <h1>ohmyfood</h1>
-    </head>
+    <header class="header header--withArrow">
+        <a href="./index.html" class="header__arrow"><i class="fas fa-arrow-left"><!-- icone flèche retour--></i></a>
+        <h1 class="header__logo">ohmyfood</h1>
+    </header>
 
     <main>
         <img>
         <div>
             <section>
                 <h2>La note enchantée</h2>
-                <i><!--icone like--></i>
+                <i class=" far fa-heart"><!--icone like--></i>
             </section>
 
             <section>
@@ -34,7 +39,7 @@
                                 <p>25€</p>
                             </div>
                             <div>
-                                <i><!--icone confirmation --></i>
+                                <i class=" fas fa-check-circle"><!--icone confirmation --></i>
                             </div>
                         </article>
                     </li>
@@ -47,7 +52,7 @@
                                 <p>35€</p>
                             </div>
                             <div>
-                                <i><!--icone confirmation --></i>
+                                <i class=" fas fa-check-circle"><!--icone confirmation --></i>
                             </div>
                         </article>
                     </li>
@@ -60,7 +65,7 @@
                                 <p>20€</p>
                             </div>
                             <div>
-                                <i><!--icone confirmation --></i>
+                                <i class=" fas fa-check-circle"><!--icone confirmation --></i>
                             </div>
                         </article>
                     </li>
@@ -73,7 +78,7 @@
                                 <p>35€</p>
                             </div>
                             <div>
-                                <i><!--icone confirmation --></i>
+                                <i class=" fas fa-check-circle"><!--icone confirmation --></i>
                             </div>
                         </article>
                     </li>
@@ -92,9 +97,7 @@
                                 <p>40€</p>
                             </div>
                             <div>
-                                <i>
-                                    <!--icone confirmation -->
-                                </i>
+                                <i class=" fas fa-check-circle"><!--icone confirmation --></i>
                             </div>
                         </article>
                     </li>
@@ -107,9 +110,7 @@
                                 <p>35€</p>
                             </div>
                             <div>
-                                <i>
-                                    <!--icone confirmation -->
-                                </i>
+                                <i class=" fas fa-check-circle"><!--icone confirmation --></i>
                             </div>
                         </article>
                     </li>
@@ -122,9 +123,7 @@
                                 <p>44€</p>
                             </div>
                             <div>
-                                <i>
-                                    <!--icone confirmation -->
-                                </i>
+                                <i class=" fas fa-check-circle"><!--icone confirmation --></i>
                             </div>
                         </article>
                     </li>
@@ -143,9 +142,7 @@
                                 <p>18€</p>
                             </div>
                             <div>
-                                <i>
-                                    <!--icone confirmation -->
-                                </i>
+                                <i class=" fas fa-check-circle"><!--icone confirmation --></i>
                             </div>
                         </article>
                     </li>
@@ -158,9 +155,7 @@
                                 <p>22€</p>
                             </div>
                             <div>
-                                <i>
-                                    <!--icone confirmation -->
-                                </i>
+                                <i class=" fas fa-check-circle"><!--icone confirmation --></i>
                             </div>
                         </article>
                     </li>
@@ -173,9 +168,7 @@
                                 <p>23€</p>
                             </div>
                             <div>
-                                <i>
-                                    <!--icone confirmation -->
-                                </i>
+                                <i class=" fas fa-check-circle"><!--icone confirmation --></i>
                             </div>
                         </article>
                     </li>
@@ -186,15 +179,17 @@
         </div>
     </main>
 
-    <footer>
-        <h2>ohmyfood</h2>
+    <footer class="footer">
+        <div class="container">
+            <h2 class="footer__title">ohmyfood</h2>
     
-        <ul>
-            <li><a href="#">Proposer un restaurant</a></li>
-            <li><a href="#">Devenir partenaire</a></li>
-            <li><a href="#">Mentions légales</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
+            <ul class="footer__list">
+                <li class="footer__listElt"><a href="#"><i class="footer__icon fas fa-utensils"><!-- icone restaurant--></i> Proposer un restaurant</a></li>
+                <li class="footer__listElt"><a href="#"><i class="footer__icon fas fa-hands-helping"><!-- icone partenaire--></i> Devenir partenaire</a></li>
+                <li class="footer__listElt"><a href="#">Mentions légales</a></li>
+                <li class="footer__listElt"><a href="mailto:support@omf.net?subject=Contact Support">Contact</a></li>
+            </ul>
+        </div>
     </footer>
 </body>
 </html>
