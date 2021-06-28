@@ -1,8 +1,12 @@
 ########################
-# Git Ignore du P2
+# Git Ignore du P3
 ########################
 
 # Les références et sources utilisés pour le projet
 ref/
+
+# Les frameworks utilisés
 dart-sass/
+
+# les exécutables du projet
 *.bat
