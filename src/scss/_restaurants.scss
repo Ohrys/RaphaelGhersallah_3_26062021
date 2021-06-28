@@ -1,0 +1,16 @@
+
+.header{
+    &--withArrow{
+        position:relative;
+    }
+
+    &__arrow{
+        position:absolute;
+        left:1.7rem;
+        top:1.7rem;
+        height:2rem;
+        width:2rem;
+
+        font-size: 1.5rem;
+    }
+}
