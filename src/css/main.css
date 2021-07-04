@@ -53,18 +53,6 @@ body, html, a {
   margin-right: 0.5rem;
 }
 
-.header--withArrow {
-  position: relative;
-}
-.header__arrow {
-  position: absolute;
-  left: 1.7rem;
-  top: 1.7rem;
-  height: 2rem;
-  width: 2rem;
-  font-size: 1.5rem;
-}
-
 .local {
   display: flex;
   justify-content: center;
@@ -246,6 +234,7 @@ body, html, a {
 .card__like .btn__like--bg {
   background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 0;
 }
@@ -256,6 +245,76 @@ body, html, a {
   opacity: 0;
 }
 .card__like:hover .btn__like--bg {
+  opacity: 1;
+}
+
+.header--withArrow {
+  position: relative;
+}
+.header__arrow {
+  position: absolute;
+  left: 1.7rem;
+  top: 1.7rem;
+  height: 2rem;
+  width: 2rem;
+  font-size: 1.5rem;
+}
+
+.menu__img {
+  max-width: 100%;
+  max-height: 32rem;
+  width: 100%;
+  object-fit: cover;
+}
+.menu__container {
+  margin-top: -3.4rem;
+  border-radius: 2rem 2rem 0 0;
+  background-color: #f6f6f6;
+  z-index: 1;
+  position: relative;
+}
+.menu__header {
+  padding: 1.5rem 2rem 0 1rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu__title {
+  margin: 0;
+  padding: 0;
+  font-family: "Shrikhand", "cursive";
+  font-weight: lighter;
+  font-size: 1.6rem;
+}
+.menu__like {
+  position: absolute;
+  top: 1.5rem;
+  right: 4rem;
+  cursor: pointer;
+}
+.menu__like .btn__like {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.menu__like .btn__like--nobg {
+  opacity: 1;
+}
+.menu__like .btn__like--bg {
+  background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+}
+.menu__like:hover .btn__like {
+  transition: all 0.2s ease-in;
+}
+.menu__like:hover .btn__like--nobg {
+  opacity: 0;
+}
+.menu__like:hover .btn__like--bg {
   opacity: 1;
 }
 
