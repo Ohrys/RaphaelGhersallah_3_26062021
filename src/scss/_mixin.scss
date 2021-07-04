@@ -1,0 +1,51 @@
+@mixin button($type:"button"){
+    cursor:pointer;
+
+    @if($type=="like"){
+        .btn__like{
+            position:absolute;
+            left:0;
+            top:0;
+            &--nobg{
+                opacity:1;
+            }
+
+            &--bg{
+                background:linear-gradient(0deg, $primary-color 0%,$secondary-color 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                opacity:0;
+            }
+        }
+
+        &:hover{
+            .btn__like{
+                transition: all .2s ease-in;
+                &--nobg{
+                    opacity:0;
+                }
+
+                &--bg{
+                    opacity:1;
+                }
+            }
+        }
+    }
+
+    @else{
+        
+        padding:1rem;
+        border-radius:2rem;
+        box-shadow: 0rem 0rem 10px rgba(0, 0, 0, 0.25);
+        background:linear-gradient(-10deg, $primary-color 0%,$secondary-color 100%);
+        color:white;
+        
+        font-size: 1.2rem;
+        
+        &:hover{
+            transition:all .2s ease-in;
+            background:linear-gradient(-10deg, lighten($primary-color,5%) 0%, lighten($secondary-color,5%) 100%);
+            box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.50);
+        }
+    }
+}

@@ -30,93 +30,95 @@
     </header>
 
     <main>
-        <section id="local">
-            <i class=" fas fa-map-marker-alt"><!-- icone localisation --></i>
-            <h2>Paris, Belleville</h2>
+        <section class="local">
+            <i class="local__icon fas fa-map-marker-alt"><!-- icone localisation --></i>
+            <h2 class="local__text">Paris, Belleville</h2>
         </section>
 
-        <section id="explorer">
-            <h2>Réservez le menu qui vous convient</h2>
+        <section class="explorer">
+            <h2 class="explorer__title">Réservez le menu qui vous convient</h2>
 
-            <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
+            <p class="explorer__text">Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
 
-            <button type="button">Explorer nos restaurants</button>
+            <a href="#" class="explorer__button">Explorer nos restaurants</a>
         </section>
 
-        <section id="tuto">
-            <div class="<!--container-->">
-                <h2>Fonctionnement</h2>
+        <section class="tuto">
+            <div class="container">
+                <h2 class="tuto__title">Fonctionnement</h2>
                 
-                <ol>
-                    <li><i class=" fas fa-mobile-alt"><!-- icone téléphone--></i><p>Choisissez votre restaurant</p></li>
-                    <li><i class=" fas fa-list-ul"><!-- icone menu--></i><p>Composez votre menu</p></li>
-                    <li><i class=" fas fa-store"><!-- icone stand--></i><p>Dégustez au restaurant</p></li>
+                <ol class="tuto__steps">
+                    <li class="tuto__step"><i class="tuto__icon fas fa-mobile-alt"><!-- icone téléphone--></i><p class="tuto__text">Choisissez votre restaurant</p></li>
+                    <li class="tuto__step"><i class="tuto__icon fas fa-list-ul"><!-- icone menu--></i><p class="tuto__text">Composez votre menu</p></li>
+                    <li class="tuto__step"><i class="tuto__icon fas fa-store"><!-- icone stand--></i><p class="tuto__text">Dégustez au restaurant</p></li>
                 </ol>
             </div>
         </section>
 
-        <section id="restaurant">
-            <div class="<!--container-->">
-                <h2>Restaurants</h2>
+        <section class="restaurant">
+            <div class="container">
+                <h2 class="restaurant__title">Restaurants</h2>
 
-                <div>
+                <div class="restaurant__cards">
                     <!-- une card -->
-                    <article><a href="./la-palette-du-gout.html">
-                        <span>Nouveau</span>
-                        <img src="src/images/restaurants/la-palette-du-gout.jpg" alt="La palette du goût"/>
-                        <div>
-                            <div>
-                                <h3>La palette du goût</h3>
-                                <p>Ménilmontant</p>
+                    <article class="card"><a href="./la-palette-du-gout.html">
+                        <span class="card--new">Nouveau</span>
+                        <img class="card__img" src="src/images/restaurants/la-palette-du-gout.jpg" alt="La palette du goût"/>
+                        <div class="card__description">
+                            <div class="card__content">
+                                <h3 class="card__title">La palette du goût</h3>
+                                <p class="card__location">Ménilmontant</p>
                             </div>
                             
-                            <div>
-                                <i class=" far fa-heart"><!-- icone de like--></i>
+                            <div class="card__like">
+                                <i class="btn__like btn__like--nobg far fa-heart fa-2x"><!-- icone de like--></i>
+                                <i class="btn__like btn__like--bg fas fa-heart fa-2x"><!-- icone de like--></i>
                             </div>
                         </div>
                     </a></article>
 
-                    <article><a href="./la-note-enchantee.html">
-                        <span>Nouveau</span>
-                        <img src="src/images/restaurants/la-note-enchantee.jpg" alt="La note enchantée"/>
-                        <div>
-                            <div>
-                                <h3>La note enchantée</h3>
-                                <p>Charonne</p>
+                    <article class="card"><a href="./la-note-enchantee.html">
+                        <span class="card--new">Nouveau</span>
+                        <img class="card__img" src="src/images/restaurants/la-note-enchantee.jpg" alt="La note enchantée"/>
+                        <div class="card__description">
+                            <div class="card__content">
+                                <h3 class="card__title">La note enchantée</h3>
+                                <p class="card__location">Charonne</p>
                             </div>
                             
-                            <div>
-                                <i class=" far fa-heart"><!-- icone de like--></i>
+                            <div class="card__like">
+                                <i class="btn__like btn__like--nobg far fa-heart fa-2x"><!-- icone de like--></i>
+                                <i class="btn__like btn__like--bg fas fa-heart fa-2x"><!-- icone de like--></i>
                             </div>
                         </div>
                     </a></article>
 
-                    <article><a href="./a-la-francaise.html">
-                        <span>Nouveau</span>
-                        <img src="src/images/restaurants/a-la-francaise.jpg" alt="À la française"/>
-                        <div>
-                            <div>
-                                <h3>À la française</h3>
-                                <p>Cité Rouge</p>
+                    <article class="card"><a href="./a-la-francaise.html">
+                        <img class="card__img" src="src/images/restaurants/a-la-francaise.jpg" alt="À la française"/>
+                        <div class="card__description">
+                            <div class="card__content">
+                                <h3 class="card__title">À la française</h3>
+                                <p class="card__location">Cité Rouge</p>
                             </div>
                             
-                            <div>
-                                <i class=" far fa-heart"><!-- icone de like--></i>
+                            <div class="card__like">
+                                <i class="btn__like btn__like--nobg far fa-heart fa-2x"><!-- icone de like--></i>
+                                <i class="btn__like btn__like--bg fas fa-heart fa-2x"><!-- icone de like--></i>
                             </div>
                         </div>
                     </a></article>
 
-                    <article><a href="les-delice-des-sens.html">
-                        <span>Nouveau</span>
-                        <img src="src/images/restaurants/les-delices-des-sens.jpg" alt="Les délices des sens"/>
-                        <div>
-                            <div>
-                                <h3>Le délice des sens</h3>
-                                <p>Folie-Méricourt</p>
+                    <article class="card"><a href="les-delice-des-sens.html">
+                        <img class="card__img" src="src/images/restaurants/les-delices-des-sens.jpg" alt="Les délices des sens"/>
+                        <div class="card__description">
+                            <div class="card__content">
+                                <h3 class="card__title">Le délice des sens</h3>
+                                <p class="card__location">Folie-Méricourt</p>
                             </div>
                             
-                            <div>
-                                <i class=" far fa-heart"><!-- icone de like--></i>
+                            <div class="card__like">
+                                <i class="btn__like btn__like--nobg far fa-heart fa-2x"><!-- icone de like--></i>
+                                <i class="btn__like btn__like--bg fas fa-heart fa-2x"><!-- icone de like--></i>
                             </div>
                         </div>
                     </a></article>
@@ -130,8 +132,8 @@
             <h2 class="footer__title">ohmyfood</h2>
             
             <ul class="footer__list">
-                <li class="footer__listElt"><a href="#"><i class="footer__icon fas fa-utensils"><!-- icone restaurant--></i> Proposer un restaurant</a></li>
-                <li class="footer__listElt"><a href="#"><i class="footer__icon fas fa-hands-helping"><!-- icone partenaire--></i> Devenir partenaire</a></li>
+                <li class="footer__listElt"><a href="#"><i class="footer__icon fas fa-utensils"><!-- icone restaurant--></i>Proposer un restaurant</a></li>
+                <li class="footer__listElt"><a href="#"><i class="footer__icon fas fa-hands-helping"><!-- icone partenaire--></i>Devenir partenaire</a></li>
                 <li class="footer__listElt"><a href="#">Mentions légales</a></li>
                 <li class="footer__listElt"><a href="mailto:support@omf.net?subject=Contact&nbsp;Support">Contact</a></li>
             </ul>
