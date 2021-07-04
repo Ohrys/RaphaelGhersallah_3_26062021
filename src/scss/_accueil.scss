@@ -1,0 +1,192 @@
+//Animation du loader ici 
+
+.local{
+    display:flex;
+    justify-content: center;
+    padding:1.25rem $app-padding;
+    background-color: #f3f3f3;
+
+    font-size:1.2rem;
+    position:relative;
+
+    &__icon{
+        margin-right:1rem;
+    }
+
+    &__text{
+        margin:0;
+        padding:0;
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+}
+
+.explorer{
+    padding:2rem;
+    text-align: center;
+    background-color: #fafafa;
+
+    &__title{
+        font-size: 1.7rem;
+        font-weight: 600;
+        margin:0;
+    }
+
+    &__text{
+        margin:1rem 0 2rem;
+        font-size: 1rem;
+        
+    }
+
+    &__button{
+        @include button();
+    }
+}
+
+.tuto{
+    padding:2rem 1rem;
+
+    &__title{
+        margin-top: 0;
+    }
+
+    &__steps{
+        display:grid;
+        grid-template-columns: 1fr;
+        margin:0;
+        padding:0;
+        list-style: none;
+        counter-reset: compteStep;
+
+        @media screen and (min-width:950px) {
+            grid-template-columns: repeat(3,1fr);
+            gap:1.5rem;
+        }
+    }
+
+    &__step{
+        display:flex;
+        position:relative;
+        padding:1.5rem;
+        margin:1rem 0 1rem 0.75rem;
+        
+        background-color: #f6f6f6;
+        border-radius: 1.25rem;
+        box-shadow: 0.25rem 0.25rem .5rem rgba(0,0,0,.25);
+
+        &::before{
+            display:flex;
+            position: absolute;
+            height:1.5rem;
+            width:1.5rem;
+            border-radius:100px;
+            
+            left:-0.75rem;
+            top:30%;
+            
+            background-color: $primary-color;
+            color:white;
+
+            justify-content: center;
+            align-items: center;
+            counter-increment: compteStep 1;
+            content:counter(compteStep);
+        }
+
+        &:hover{
+            .tuto__icon{
+                color:$primary-color;
+            }
+
+            background-color: #f5edff;
+        }
+    }
+
+    &__icon{
+        margin:0;
+        margin-right: 1rem;
+        color: #7e7e7e;
+    }
+
+    &__text{
+        margin: 0;
+        padding: 0;
+        font-weight: bolder;
+    }
+}
+
+.restaurant{
+    padding:2rem 1rem;
+    background-color: #f6f6f6;
+
+    &__title{
+        /*le style par défaut suffit*/
+    }
+
+    &__cards{
+        display:grid;
+        grid-template-columns:1fr;
+        gap: 2rem;
+
+        @media screen and (min-width:860px){
+            grid-template-columns:repeat(2,1fr);
+        }
+    }
+}
+
+.card{
+    background-color: white;
+    border-radius: 1rem;
+    position: relative;
+    display:block;
+    box-shadow: 0 0 .5rem rgba(0,0,0,.25);
+
+    &__img{
+        height:12rem;
+        width:100%;
+        object-fit: cover;
+        border-radius: 1rem 1rem 0 0;
+    }
+
+    &--new{
+        background-color:$tertiary-color;
+        color:darken($tertiary-color,50%);
+        padding:0.5rem 1rem;
+        border-radius: 0.25rem;
+        position: absolute;
+        top:1rem;
+        right:1rem;
+    }
+
+    &__description{
+        padding:1rem;
+        position:relative;
+        display:flex;
+        align-items: center;
+    }
+
+    &__content{
+        flex:1;
+    }
+
+    &__title{
+        margin:0;
+        margin-bottom: 0.25rem;
+    }
+
+    &__location{
+        margin:0;
+    }
+
+    
+
+    &__like{
+        position:relative;
+        left:-2rem;
+        top:-1rem;
+
+        @include button("like");
+    }
+
+
+}

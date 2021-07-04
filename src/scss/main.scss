@@ -4,14 +4,14 @@ $tertiary-color:#99E2D0;
 
 $app-padding : 1rem;
 
-img{
-    width:200px;
-}
+
 
 @import 'font.scss';
 @import 'utils.scss';
+@import 'mixin.scss';
 @import 'base.scss';
 @import 'restaurants.scss';
+@import 'accueil.scss';
 
 
 
