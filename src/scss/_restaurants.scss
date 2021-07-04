@@ -16,8 +16,6 @@
 }
 
 .menu{
-    padding-bottom: 2rem;
-
     &__img{
         max-width: 100%;
         max-height: 32rem;
@@ -105,14 +103,24 @@
     background-color: white;
     display:flex;
     overflow:hidden;
-    border-radius:1.75rem;
+    border-radius:0.5rem;
     margin:1rem 0;
     padding:1rem;
     box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
 
-    transform:scale(0);
-    animation:scaleUp 1s;
+    opacity: 0;
+    transform:translateY(5rem);
+    animation:translationUp 1s;
     animation-fill-mode: both;
+
+    @media screen and (min-width:860px) {
+        opacity:1;
+        transform:translateY(0rem);
+        transform:scale(0);
+        animation:scaleUp 1s;
+        animation-fill-mode: both;    
+    }
+    
 
     &__header{
         white-space: nowrap;

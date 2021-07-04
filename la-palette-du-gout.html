@@ -8,9 +8,9 @@
 
     <!-- import FA -->
     <script src="https://kit.fontawesome.com/85f5a47216.js" crossorigin="anonymous"></script>
-
+    
     <!-- page CSS -->
-    <link rel="stylesheet" href="src/css/main.css"/>
+    <link rel="stylesheet" href="src/css/main.css" />
 
 </head>
 <body>
@@ -19,157 +19,156 @@
         <h1 class="header__logo">ohmyfood</h1>
     </header>
 
-    <main>
-        <img src="src/images/restaurants/la-palette-du-gout.jpg" alt="La palette du goût">
-        <div>
-            <section>
-                <h2>La palette du goût</h2>
-                <i class=" far fa-heart"><!--icone like--></i>
+    <main class="menu">
+        <img class="menu__img" src="src/images/restaurants/a-la-francaise.jpg" alt="À la française">
+        <div class="menu__container container">
+            <section class="menu__header">
+                <h2 class="menu__title">La palette du goût</h2>
+                <div class="menu__like">
+                    <i class="btn__like btn__like--nobg far fa-heart fa-2x"><!-- icone de like--></i>
+                    <i class="btn__like btn__like--bg fas fa-heart fa-2x"><!-- icone de like--></i>
+                </div>
             </section>
 
-            <section>
-                <h3>Entrées</h3>
+            <section class="submenus">
+                <div class="submenu">
+                    <h3 class="submenu__title">Entrées</h3>
 
-                <ul>
-                    <li>
-                        <article>
-                            <div>
-                                <h4>Fricassés d'escargot</h4>
-                                <p>Au piment d'espelette</p>
-                                <p>25€</p>
-                            </div>
-                            <div>
-                                <i class=" fas fa-check-circle"><!--icone confirmation --></i>
-                            </div>
-                        </article>
-                    </li>
-                    
-                    <li>
-                        <article>
-                            <div>
-                                <h4>Foie gras de canard mi-cuit</h4>
-                                <p>Et ses copeaux de truffe noire</p>
-                                <p>35€</p>
-                            </div>
-                            <div>
-                                <i class=" fas fa-check-circle"><!--icone confirmation --></i>
-                            </div>
-                        </article>
-                    </li>
-                    
-                    <li>
-                        <article>
-                            <div>
-                                <h4>Oeuf au plat</h4>
-                                <p>Assaisonné à la truffe sur lit de salade</p>
-                                <p>20€</p>
-                            </div>
-                            <div>
-                                <i class=" fas fa-check-circle"><!--icone confirmation --></i>
-                            </div>
-                        </article>
-                    </li>
-                </ul>
+                    <article class="option delay-1">
+                        <div class="option__header">
+                            <h4 class="option__title">Fricassé d'escargot</h4>
+                            <p class="option__description">Au piment d'Espelette</p>
+                        </div>
+                        <p class="option__price">25€</p>
+                        <div class="option__wrapIcon">
+                            <i class="option__icon fas fa-check-circle"><!--icone confirmation --></i>
+                        </div>
+                    </article>
+                        
+                
+                    <article class="option delay-2">
+                        <div class="option__header">
+                            <h4 class="option__title">Foie gras de canard mi-cuit</h4>
+                            <p class="option__description">Et ses copeaux de truffe noire</p>
+                        </div>
+                        <p class="option__price">35€</p>
+                        <div class="option__wrapIcon">
+                            <i class="option__icon fas fa-check-circle">
+                                <!--icone confirmation -->
+                            </i>
+                        </div>
+                    </article>
+                        
+                    <article class="option delay-3">
+                        <div class="option__header">
+                            <h4 class="option__title">Oeuf au plat</h4>
+                            <p class="option__description">Assaisonné à la truffe sur lit de ca</p>
+                        </div>
+                        <p class="option__price">20€</p>
+                        <div class="option__wrapIcon">
+                            <i class="option__icon fas fa-check-circle">
+                                <!--icone confirmation -->
+                            </i>
+                        </div>
+                    </article>
+                </div>
+                <div class="submenu">
+                    <h3 class="submenu__title">Plats</h3>
+                
+                    <article class="option delay-4">
+                        <div class="option__header">
+                            <h4 class="option__title">Filet de boeuf aux herbes</h4>
+                            <p class="option__description">Accompagné de sa ribambelle de légumes</p>
+                        </div>
+                        <p class="option__price">40€</p>
+                        <div class="option__wrapIcon">
+                            <i class="option__icon fas fa-check-circle">
+                                <!--icone confirmation -->
+                            </i>
+                        </div>
+                    </article>
+                
+                
+                    <article class="option delay-5">
+                        <div class="option__header">
+                            <h4 class="option__title">Parmentier de queue de boeuf</h4>
+                            <p class="option__description">À la truffe noire sur sa purée de panais</p>
+                        </div>
+                        <p class="option__price">35€</p>
+                        <div class="option__wrapIcon">
+                            <i class="option__icon fas fa-check-circle">
+                                <!--icone confirmation -->
+                            </i>
+                        </div>
+                    </article>
+                
+                    <article class="option delay-6">
+                        <div class="option__header">
+                            <h4 class="option__title">Filet de turbot</h4>
+                            <p class="option__description">Aux agrumes</p>
+                        </div>
+                        <p class="option__price">44€</p>
+                        <div class="option__wrapIcon">
+                            <i class="option__icon fas fa-check-circle">
+                                <!--icone confirmation -->
+                            </i>
+                        </div>
+                    </article>
+                </div>
+                <div class="submenu">
+                    <h3 class="submenu__title">Desserts</h3>
+                
+                    <article class="option delay-7">
+                        <div class="option__header">
+                            <h4 class="option__title">Paris-Brest</h4>
+                            <p class="option__description">Revisité</p>
+                        </div>
+                        <p class="option__price">18€</p>
+                        <div class="option__wrapIcon">
+                            <i class="option__icon fas fa-check-circle">
+                                <!--icone confirmation -->
+                            </i>
+                        </div>
+                    </article>
+                
+                
+                    <article class="option delay-8">
+                        <div class="option__header">
+                            <h4 class="option__title">Macaron au chocolat d'exception</h4>
+                            <p class="option__description">Et glace à la vanille de Madagascar</p>
+                        </div>
+                        <p class="option__price">22€</p>
+                        <div class="option__wrapIcon">
+                            <i class="option__icon fas fa-check-circle">
+                                <!--icone confirmation -->
+                            </i>
+                        </div>
+                    </article>
+                
+                    <article class="option delay-9">
+                        <div class="option__header">
+                            <h4 class="option__title">Mousse au chocolat</h4>
+                            <p class="option__description">Au piment d'Espelette et à la truffe noire</p>
+                        </div>
+                        <p class="option__price">23€</p>
+                        <div class="option__wrapIcon">
+                            <i class="option__icon fas fa-check-circle">
+                                <!--icone confirmation -->
+                            </i>
+                        </div>
+                    </article>
+                </div>
             </section>
 
-            <section>
-                <h3>Plats</h3>
-            
-                <ul>
-                    <li>
-                        <article>
-                            <div>
-                                <h4>Filet de boeuf aux herbes</h4>
-                                <p>Accompagné de sa ribambelle de légume</p>
-                                <p>40€</p>
-                            </div>
-                            <div>
-                                <i class=" fas fa-check-circle"><!--icone confirmation --></i>
-                            </div>
-                        </article>
-                    </li>
-            
-                    <li>
-                        <article>
-                            <div>
-                                <h4>Parmentier de queue de boeuf</h4>
-                                <p>À la truffe noire sur sa purée de panais</p>
-                                <p>35€</p>
-                            </div>
-                            <div>
-                                <i class=" fas fa-check-circle"><!--icone confirmation --></i>
-                            </div>
-                        </article>
-                    </li>
-            
-                    <li>
-                        <article>
-                            <div>
-                                <h4>Filet de Turbot</h4>
-                                <p>Aux agrumes</p>
-                                <p>44€</p>
-                            </div>
-                            <div>
-                                <i class=" fas fa-check-circle"><!--icone confirmation --></i>
-                            </div>
-                        </article>
-                    </li>
-                </ul>
-            </section>
 
-            <section>
-                <h3>Desserts</h3>
-            
-                <ul>
-                    <li>
-                        <article>
-                            <div>
-                                <h4>Paris-Brest</h4>
-                                <p>Revisité</p>
-                                <p>18€</p>
-                            </div>
-                            <div>
-                                <i class=" fas fa-check-circle"><!--icone confirmation --></i>
-                            </div>
-                        </article>
-                    </li>
-            
-                    <li>
-                        <article>
-                            <div>
-                                <h4>Macaron au chocolat d'exception</h4>
-                                <p>Et glace à la vanille de Madagascar</p>
-                                <p>22€</p>
-                            </div>
-                            <div>
-                                <i class=" fas fa-check-circle"><!--icone confirmation --></i>
-                            </div>
-                        </article>
-                    </li>
-            
-                    <li>
-                        <article>
-                            <div>
-                                <h4>Mousse au chocolat</h4>
-                                <p>Au piment d'espelette et à la truffe noire</p>
-                                <p>23€</p>
-                            </div>
-                            <div>
-                                <i class=" fas fa-check-circle"><!--icone confirmation --></i>
-                            </div>
-                        </article>
-                    </li>
-                </ul>
-            </section>
-
-            <button type="button">Commander</button>
+            <div class="menu__buttonContainer"><a class="menu__button">Commander</a></div>
         </div>
     </main>
 
     <footer class="footer">
         <div class="container">
             <h2 class="footer__title">ohmyfood</h2>
-    
+            
             <ul class="footer__list">
                 <li class="footer__listElt"><a href="#"><i class="footer__icon fas fa-utensils"><!-- icone restaurant--></i> Proposer un restaurant</a></li>
                 <li class="footer__listElt"><a href="#"><i class="footer__icon fas fa-hands-helping"><!-- icone partenaire--></i> Devenir partenaire</a></li>

@@ -4,13 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/85f5a47216.js" crossorigin="anonymous"></script>
-    <title>Restaurant le délice des sens - ohmyfood!</title>
+    <title>Restaurant les délices des sens - ohmyfood!</title>
 
     <!-- import FA -->
     <script src="https://kit.fontawesome.com/85f5a47216.js" crossorigin="anonymous"></script>
-
+    
     <!-- page CSS -->
-    <link rel="stylesheet" href="src/css/main.css"/>
+    <link rel="stylesheet" href="src/css/main.css" />
 
 </head>
 <body>
@@ -19,157 +19,156 @@
         <h1 class="header__logo">ohmyfood</h1>
     </header>
 
-    <main>
-        <img src="src/images/restaurants/les-delices-des-sens.jpg" alt="Les délices des sens">
-        <div>
-            <section>
-                <h2>Le délice des sens</h2>
-                <i class=" far fa-heart"><!--icone like--></i>
+    <main class="menu">
+        <img class="menu__img" src="src/images/restaurants/a-la-francaise.jpg" alt="À la française">
+        <div class="menu__container container">
+            <section class="menu__header">
+                <h2 class="menu__title">Les délices des sens</h2>
+                <div class="menu__like">
+                    <i class="btn__like btn__like--nobg far fa-heart fa-2x"><!-- icone de like--></i>
+                    <i class="btn__like btn__like--bg fas fa-heart fa-2x"><!-- icone de like--></i>
+                </div>
             </section>
 
-            <section>
-                <h3>Entrées</h3>
+            <section class="submenus">
+                <div class="submenu">
+                    <h3 class="submenu__title">Entrées</h3>
 
-                <ul>
-                    <li>
-                        <article>
-                            <div>
-                                <h4>Tartare de thon</h4>
-                                <p>Assaisonné au yuzu</p>
-                                <p>25€</p>
-                            </div>
-                            <div>
-                                <i class=" fas fa-check-circle"><!--icone confirmation --></i>
-                            </div>
-                        </article>
-                    </li>
-                    
-                    <li>
-                        <article>
-                            <div>
-                                <h4>Bouchée de homard croustillant</h4>
-                                <p>Et sa farandole de petits légumes</p>
-                                <p>35€</p>
-                            </div>
-                            <div>
-                                <i class=" fas fa-check-circle"><!--icone confirmation --></i>
-                            </div>
-                        </article>
-                    </li>
-                    
-                    <li>
-                        <article>
-                            <div>
-                                <h4>Velouté de cèpes</h4>
-                                <p>Aux truffes</p>
-                                <p>20€</p>
-                            </div>
-                            <div>
-                                <i class=" fas fa-check-circle"><!--icone confirmation --></i>
-                            </div>
-                        </article>
-                    </li>
-                </ul>
+                    <article class="option delay-1">
+                        <div class="option__header">
+                            <h4 class="option__title">Tartare de thon</h4>
+                            <p class="option__description">Assaisonné au yuzu</p>
+                        </div>
+                        <p class="option__price">25€</p>
+                        <div class="option__wrapIcon">
+                            <i class="option__icon fas fa-check-circle"><!--icone confirmation --></i>
+                        </div>
+                    </article>
+                        
+                
+                    <article class="option delay-2">
+                        <div class="option__header">
+                            <h4 class="option__title">Bouchée de homard croustillant</h4>
+                            <p class="option__description">Et sa farandole de petits légumes</p>
+                        </div>
+                        <p class="option__price">35€</p>
+                        <div class="option__wrapIcon">
+                            <i class="option__icon fas fa-check-circle">
+                                <!--icone confirmation -->
+                            </i>
+                        </div>
+                    </article>
+                        
+                    <article class="option delay-3">
+                        <div class="option__header">
+                            <h4 class="option__title">Velouté de cèpes</h4>
+                            <p class="option__description">Aux truffes</p>
+                        </div>
+                        <p class="option__price">20€</p>
+                        <div class="option__wrapIcon">
+                            <i class="option__icon fas fa-check-circle">
+                                <!--icone confirmation -->
+                            </i>
+                        </div>
+                    </article>
+                </div>
+                <div class="submenu">
+                    <h3 class="submenu__title">Plats</h3>
+                
+                    <article class="option delay-4">
+                        <div class="option__header">
+                            <h4 class="option__title">Poulet rôti aux herbes de Provence</h4>
+                            <p class="option__description">Et sa crème truffe</p>
+                        </div>
+                        <p class="option__price">40€</p>
+                        <div class="option__wrapIcon">
+                            <i class="option__icon fas fa-check-circle">
+                                <!--icone confirmation -->
+                            </i>
+                        </div>
+                    </article>
+                
+                
+                    <article class="option delay-5">
+                        <div class="option__header">
+                            <h4 class="option__title">Langouste rôtie</h4>
+                            <p class="option__description">Et ses légumes de saison</p>
+                        </div>
+                        <p class="option__price">35€</p>
+                        <div class="option__wrapIcon">
+                            <i class="option__icon fas fa-check-circle">
+                                <!--icone confirmation -->
+                            </i>
+                        </div>
+                    </article>
+                
+                    <article class="option delay-6">
+                        <div class="option__header">
+                            <h4 class="option__title">Côte de boeuf Angus</h4>
+                            <p class="option__description">Et sa purée de panais</p>
+                        </div>
+                        <p class="option__price">44€</p>
+                        <div class="option__wrapIcon">
+                            <i class="option__icon fas fa-check-circle">
+                                <!--icone confirmation -->
+                            </i>
+                        </div>
+                    </article>
+                </div>
+                <div class="submenu">
+                    <h3 class="submenu__title">Desserts</h3>
+                
+                    <article class="option delay-7">
+                        <div class="option__header">
+                            <h4 class="option__title">Farandole de desserts</h4>
+                            <p class="option__description">Du chef</p>
+                        </div>
+                        <p class="option__price">18€</p>
+                        <div class="option__wrapIcon">
+                            <i class="option__icon fas fa-check-circle">
+                                <!--icone confirmation -->
+                            </i>
+                        </div>
+                    </article>
+                
+                
+                    <article class="option delay-8">
+                        <div class="option__header">
+                            <h4 class="option__title">Crème brulée</h4>
+                            <p class="option__description">Revisitée</p>
+                        </div>
+                        <p class="option__price">22€</p>
+                        <div class="option__wrapIcon">
+                            <i class="option__icon fas fa-check-circle">
+                                <!--icone confirmation -->
+                            </i>
+                        </div>
+                    </article>
+                
+                    <article class="option delay-9">
+                        <div class="option__header">
+                            <h4 class="option__title">Tiramisu</h4>
+                            <p class="option__description">À la noisette</p>
+                        </div>
+                        <p class="option__price">23€</p>
+                        <div class="option__wrapIcon">
+                            <i class="option__icon fas fa-check-circle">
+                                <!--icone confirmation -->
+                            </i>
+                        </div>
+                    </article>
+                </div>
             </section>
 
-            <section>
-                <h3>Plats</h3>
-            
-                <ul>
-                    <li>
-                        <article>
-                            <div>
-                                <h4>Poulet rôti aux herbes de provence</h4>
-                                <p>Et ses légumes de saison</p>
-                                <p>40€</p>
-                            </div>
-                            <div>
-                                <i class=" fas fa-check-circle"><!--icone confirmation --></i>
-                            </div>
-                        </article>
-                    </li>
-            
-                    <li>
-                        <article>
-                            <div>
-                                <h4>Langouste rôtie</h4>
-                                <p>Et ses légumes de saison</p>
-                                <p>35€</p>
-                            </div>
-                            <div>
-                                <i class=" fas fa-check-circle"><!--icone confirmation --></i>
-                            </div>
-                        </article>
-                    </li>
-            
-                    <li>
-                        <article>
-                            <div>
-                                <h4>Côté de boeuf angus</h4>
-                                <p>Et sa purée de panais</p>
-                                <p>44€</p>
-                            </div>
-                            <div>
-                                <i class=" fas fa-check-circle"><!--icone confirmation --></i>
-                            </div>
-                        </article>
-                    </li>
-                </ul>
-            </section>
 
-            <section>
-                <h3>Desserts</h3>
-            
-                <ul>
-                    <li>
-                        <article>
-                            <div>
-                                <h4>Farandole de desserts</h4>
-                                <p>Du chef</p>
-                                <p>18€</p>
-                            </div>
-                            <div>
-                                <i class=" fas fa-check-circle"><!--icone confirmation --></i>
-                            </div>
-                        </article>
-                    </li>
-            
-                    <li>
-                        <article>
-                            <div>
-                                <h4>Crème brulée</h4>
-                                <p>Revisitée</p>
-                                <p>22€</p>
-                            </div>
-                            <div>
-                                <i class=" fas fa-check-circle"><!--icone confirmation --></i>
-                            </div>
-                        </article>
-                    </li>
-            
-                    <li>
-                        <article>
-                            <div>
-                                <h4>Tiramisu</h4>
-                                <p>À la noisette</p>
-                                <p>23€</p>
-                            </div>
-                            <div>
-                                <i class=" fas fa-check-circle"><!--icone confirmation --></i>
-                            </div>
-                        </article>
-                    </li>
-                </ul>
-            </section>
-
-            <button type="button">Commander</button>
+            <div class="menu__buttonContainer"><a class="menu__button">Commander</a></div>
         </div>
     </main>
 
     <footer class="footer">
         <div class="container">
             <h2 class="footer__title">ohmyfood</h2>
-    
+            
             <ul class="footer__list">
                 <li class="footer__listElt"><a href="#"><i class="footer__icon fas fa-utensils"><!-- icone restaurant--></i> Proposer un restaurant</a></li>
                 <li class="footer__listElt"><a href="#"><i class="footer__icon fas fa-hands-helping"><!-- icone partenaire--></i> Devenir partenaire</a></li>
