@@ -1,5 +1,45 @@
 //Animation du loader ici 
 
+.loader{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.90);
+    animation: loader 0.01s;
+    animation-delay: 3s;
+    animation-fill-mode: both;
+    z-index: 100;
+    
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    &__itemContainer{
+        display: flex;
+        width:25%;
+        justify-content: space-around;
+    }
+
+    &__item{
+        font-size: 4rem;
+        transform:scale(0);
+        animation:zoom 1s;
+        animation-iteration-count: 3;
+        
+        &--1{
+            color:$primary-color;
+        }
+        &--2{
+            color:$secondary-color;
+        }
+        &--3{
+            color:$tertiary-color;
+        }
+    }
+}
+
 .local{
     display:flex;
     justify-content: center;

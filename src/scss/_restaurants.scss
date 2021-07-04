@@ -14,3 +14,171 @@
         font-size: 1.5rem;
     }
 }
+
+.menu{
+    &__img{
+        max-width: 100%;
+        max-height: 32rem;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    &__container{
+        margin-top: -3.4rem;
+        border-radius: 2rem 2rem 0 0;
+        background-color: #f6f6f6;
+        z-index: 1;
+        position: relative;
+    }
+
+    &__header{
+        padding: 1.5rem 2rem 0 1rem;
+        position:relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__title{
+        margin:0;
+        padding:0;
+        font-family: "Shrikhand", "cursive";
+        font-weight: lighter;
+        font-size: 1.6rem;
+    }
+
+    &__like{
+        position:absolute;
+        top:1.5rem;
+        right:4rem;
+        @include button("like");
+    }
+
+    &__buttonContainer{    
+        display:flex;
+        justify-content:center;
+        padding:3rem 0;
+    }
+
+    &__button{
+        @include button();
+        padding:1rem 3rem 1rem 3rem;
+    }
+}
+
+.submenus{
+    display:grid;
+    column-gap: 1rem;
+
+    @media screen and (min-width:1280px) {
+        grid-template-columns: repeat(3,1fr);
+
+    }
+}
+
+.submenu{
+    max-width: 100%;
+    overflow: hidden;
+    padding:0 1rem;
+    
+    &__title{
+        text-transform: uppercase;
+        position:relative;
+        padding-bottom: 0.5rem;
+        font-weight: 400;
+
+        &::after{
+            content:"";
+            width:3rem;
+            height:0.25rem;
+            background-color: $tertiary-color;
+            position:absolute;
+            left:0;
+            bottom: 0;
+        }
+    }
+}
+
+.option{
+    background-color: white;
+    display:flex;
+    overflow:hidden;
+    border-radius:0.5rem;
+    margin:1rem 0;
+    padding:1rem;
+    box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
+
+    opacity: 0;
+    transform:translateY(5rem);
+    animation:translationUp 1s;
+    animation-fill-mode: both;
+
+    @media screen and (min-width:860px) {
+        opacity:1;
+        transform:translateY(0rem);
+        transform:scale(0);
+        animation:scaleUp 1s;
+        animation-fill-mode: both;    
+    }
+    
+
+    &__header{
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        flex: 1;
+    }
+
+    &__title{
+        font-size: 1.2rem;
+        margin: 0;
+        margin-bottom: 0.5rem;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    &__description{
+        font-size: 1.1rem;
+        margin: 0;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    &__price{
+        font-weight: bold;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding:1rem 0 0 0.5rem ;
+        margin:0;
+    }
+
+    &__wrapIcon{
+        background-color: $tertiary-color;
+        margin:-1rem -5rem -1rem 1rem;
+        width:4rem;
+        display:flex;
+        align-items: center;
+        justify-content:center;
+        transition-duration:.5s;
+    }
+
+    &__icon{
+        font-size: 1.5rem;
+        color:white;
+        transform:rotate(180deg);
+        transition:.5s;
+    }
+
+    &:hover {
+        cursor:pointer;
+        .option__wrapIcon{
+            margin-right: -1rem;
+        }
+        .option__icon{
+            transform:rotate(0deg);
+        }
+    }
+}
