@@ -1,4 +1,4 @@
-
+// Ajout spécifique au header sur les pages menus (la flèche de retour)
 .header{
     &--withArrow{
         position:relative;
@@ -99,6 +99,7 @@
     }
 }
 
+// une option de la page menu. 
 .option{
     background-color: white;
     display:flex;
@@ -169,7 +170,7 @@
         font-size: 1.5rem;
         color:white;
         transform:rotate(180deg);
-        transition:.5s;
+        transition:2s;
     }
 
     &:hover {
@@ -179,6 +180,7 @@
         }
         .option__icon{
             transform:rotate(0deg);
+            transition:.5s;
         }
     }
 }

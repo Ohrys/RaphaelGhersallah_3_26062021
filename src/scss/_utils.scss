@@ -1,13 +1,11 @@
-//Définitions de mixins utiles
-
-
 //Définitions de fonctions
 
 ///Renvoie une couleur selon le contraste nécessaire
 ///
 /// @param {color} $bg_color
 ///     la couleur de fond du bloc
-/// @return {color} $result une couleur à la contraste suffisamment élevée
+/// @return {color} 
+///     $result une couleur à la contraste suffisamment élevée
 @function contrast_of($bg_color){
     $result : #000;
     @if(lightness($bg_color)<50%){

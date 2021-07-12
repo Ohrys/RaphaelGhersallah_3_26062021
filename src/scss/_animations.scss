@@ -1,5 +1,7 @@
 @use "sass:math";
 
+
+//animation d'apparition des pages menus. Anime les plats.
 @keyframes scaleUp {
     0%{
         transform : scale(0);
@@ -9,6 +11,7 @@
     }
 }
 
+//animation d'apparition des pages menus. Anime les plats.
 @keyframes translationUp{
     0%{
         transform:translateY(5rem);
@@ -22,6 +25,8 @@
     }
 }
 
+
+//animation pour le loader de page d'accueil. Anime le fond
 @keyframes loader{
     100%{
         opacity:0;
@@ -29,6 +34,7 @@
     }
 }
 
+//animation pour le loader de page d'accueil. Anime les icônes
 @keyframes zoom{
     0%{
         transform:scale(0);
@@ -45,6 +51,7 @@
     
 }
 
+//boucle permettant de delayer selon la classe delay-X. (0 <= X <= 9)
 @for $i from 0 to 10 {
     $time: math.div($i,10);
     .delay-#{$i}{

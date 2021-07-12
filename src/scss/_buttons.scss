@@ -1,3 +1,9 @@
+///mixin permettant de définir le style du button selon le type tapé
+///
+/// @param {String} $type
+///     Type de bouton  "button" par défaut.
+/// @return {void}
+///     renvoie le css selon le type passé en paramètre
 @mixin button($type:"button"){
     cursor:pointer;
 

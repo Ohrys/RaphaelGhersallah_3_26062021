@@ -1,5 +1,4 @@
 //Animation du loader ici 
-
 .loader{
     position: fixed;
     height: 100%;
@@ -40,6 +39,8 @@
     }
 }
 
+
+//Début du SCSS propre à index.html
 .local{
     display:flex;
     justify-content: center;
@@ -159,10 +160,6 @@
     padding:2rem 1rem;
     background-color: #f6f6f6;
 
-    &__title{
-        /*le style par défaut suffit*/
-    }
-
     &__cards{
         display:grid;
         grid-template-columns:1fr;
@@ -174,6 +171,7 @@
     }
 }
 
+// SCSS d'une card de restaurant
 .card{
     background-color: white;
     border-radius: 1rem;

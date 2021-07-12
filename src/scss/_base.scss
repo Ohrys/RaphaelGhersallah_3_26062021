@@ -1,11 +1,11 @@
+//SCSS du header du footer et retrait de certaines propriétés par défaut générales. 
 
 body, html, a{
     margin:0;
     font-family: 'Roboto', 'sans-serif';
-    font-size: 16px;
+    font-size: 16px; // taille par défaut pour l'expression des tailles en rem.
     text-decoration: none;
     color:inherit;
-    // 
     scroll-behavior: smooth;
 }
 
